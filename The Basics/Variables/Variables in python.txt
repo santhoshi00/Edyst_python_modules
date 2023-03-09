@@ -1,0 +1,40 @@
+Variables in Python
+We use variables to store the different types of values like integers, strings, float, boolean and None
+
+You can treat variables as boxes. Each box has a certain kind of value that it can store.
+
+Similar boxes can interact - we can add them, join them and do such similar operations. This means that integer variables can be added, String variables can be joined etc. There are many more operations we can do with variables.
+
+However, let’s understand how to create variables first.
+
+Creating and Initializing
+Using the = operator, we can assign a value to a variable. The process of assigning the value is called initialization.
+
+name = "George"
+
+The most common data types that we will use are:
+
+int: for integer values
+float: for decimal values
+boolean: for True/False values
+string: for 0 or more character values
+Naming Variables
+Variables in Python are case-sensitive. This means that the age and Age are different because Python sees both of these variables are different. The first characters of both those variables are different.
+
+Your variable name must start with an alphabet or underscore _  sign. We can’t name the variable beginning with a number.
+
+Eg, 2age, 3llo or even 1ne are all wrong variable definitions.
+
+Numbers can be used in the name, as long as they are not at the start of the variable. Thus, these variables are all valid:
+age, age2, his_age, his1_age2, her7age, _age
+
+None
+None is a powerful value which we can store in a variable till the time that we need to actually initialize it.
+
+For example:
+
+age = None
+if age is None:
+	age = 12
+    print(age)
+Here, we used an if condition - don't worry, we are going to explore conditionals in much more detail soon. However, in the above code, it is clear that sometimes we need to declare the variable to hold no value at all. In such cases we use the None value.
