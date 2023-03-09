@@ -1,0 +1,40 @@
+Type Conversion in Python
+What is Type Conversion?
+Type Conversion is the process of converting from one data type to another. This is not possible with all data types, since not all of them are compatible with one another.
+
+For eg, we can’t convert a string type to an int always, because it might contain some characters. But yes, we can convert an int to a float always because these are numeric types.
+
+We use the following functions to convert a value into another type:
+
+str() - to convert to a string
+int() - to convert to an integer
+float() - to convert to a decimal value
+bool() - to convert to a boolean value
+It converts any non-zero number to True. Converts zero to False
+It converts any non-empty string to True. Converts empty string to False
+Examples:
+
+age = 5
+decimal_age = float(age)
+string_age = str(age)
+string_age_2 = str(decimal_age)
+ 
+legal = "Yes"
+isLegal = bool(legal)
+legal_2 = ""
+isLegal2 = bool(legal_2)
+ 
+print(age)
+print(decimal_age)
+print(string_age) # converted from int
+print(string_age_2) # converted from float
+print(isLegal) # converted from non-empty string
+print(isLegal2) # converted from empty string
+Output:
+
+5
+5.0
+5
+5.0
+True
+False
