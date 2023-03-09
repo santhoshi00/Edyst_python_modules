@@ -1,0 +1,71 @@
+Strings are very powerful in Python. The more you practice, the more magic you will be able to do with it!
+
+Here are some important functions:
+
+Function	Description
+capitalize()	Converts first character to Capital Letter
+count()	returns occurrences of substring in string
+endswith()	Checks if String Ends with the Specified Suffix
+find()	Returns the index of first occurrence of substring
+index()	Returns Index of Substring
+isalnum()	Checks Alphanumeric Character
+isalpha()	Checks if All Characters are Alphabets
+isdecimal()	Checks Decimal Characters
+isdigit()	Checks Digit Characters
+islower()	Checks if all Alphabets in a String are Lowercase
+isnumeric()	Checks Numeric Characters
+isupper()	returns True if all characters are uppercase characters
+join()	Returns a Concatenated String
+lower()	returns lowercased string
+upper()	returns uppercased string
+swapcase()	swap uppercase characters to lowercase; vice versa
+strip()	Removes Both Leading and Trailing Characters
+replace()	Replaces Substring Inside
+split()	Splits String from Left
+startswith()	Checks if String Starts with the Specified String
+ord()	returns Unicode code point for Unicode character
+Attempt the questions that follow by referring to the above table.
+
+Examples
+word = 'edystiscool'
+ 
+new_word = word.capitalize()
+print(new_word)
+# Output: Edystiscool
+ 
+print (word.count('s')) # count of the s in the given variable
+# Output: 2
+ 
+print(word.endswith('ool'))
+# Output: True
+ 
+print(word.startswith('ool'))
+# Output: False
+ 
+print(word.startswith('edyst'))
+# Output: True
+ 
+print(word.startswith('hi'))
+# Output: False
+ 
+print(word.find('edyst')) # finds index of edyst in the given word
+# Output: 0
+ 
+print(word.find('edyst', 5,10)) # finds edyst in the position 5 to 10
+# Output: -1
+ 
+print(word.index('cool')) # index of the word cool in given variable
+# Output: 7
+ 
+new_word = '123abc'
+print(new_word.isalnum())
+# Output: True
+ 
+print(word.isalpha())
+# Output: True
+ 
+new_word = ''
+new_word = new_word.join(['edyst','is','super','cool']) # Joins all the words in the list
+ 
+print(new_word)
+# Output: edystissupercool
