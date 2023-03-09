@@ -1,0 +1,44 @@
+What are operators?
+Operators are special symbols that perform specific operations on one, two, or three operands, and then return a result.
+
+We will have a look at the following operators:
+
+Arithmetic Operators
+Relational Operators
+Logical Operators
+Arithmetic Operators
+Arithmetic Operators are used to do basic mathematical operations like addition, subtraction, multiplication and division.
+
+Operator	Description	Example	Result
++ (Addition)	Adds values on either side of the operator	20 + 10	30
+- (Subtraction)	Subtracts right-hand operand from left-hand operand	20 - 10	10
+* (Multiplication)	Multiplies values on either side of the operator	20 * 10	200
+/ (Division)	Divides left-hand operand by right-hand operand.	9 / 5	1.8
+// (Integer Division)	Divides left-hand operand by right-hand operand and stores only integer part of divisor	9 / 5	1
+% (Modulus)	Divides left-hand operand by right-hand operand and returns remainder	10 % 6	4
+Here is how we use the operators in a program:
+
+a = 20;
+b = 10;
+c = 8;
+d = 6;
+print("a + b =",(a + b) )
+print("a - b =",(a - b) )
+print("a * b =",(a * b) )
+print("b / c =",(b / c) )
+print("b // c =",(b // c) )
+print("c % d =",(c % d) )
+print("d % a =",(d % a) )
+Output:
+
+a + b = 30
+a - b = 10
+a * b = 200
+b / c = 1.25
+b // c = 1
+c % d = 2
+d % a = 6
+Note: As in real life, division by 0 is not defined.
+
+So when you run a Python program which has a divide by 0 statement, the Python program stops when it sees the divide by 0 command.
+All the commands before this statement are executed.
