@@ -1,0 +1,117 @@
+What is the If statement?
+The if statement is the most basic way of controlling the flow of a program.
+
+It tells the program to execute a certain set of commands only if some conditions are true.
+
+For eg, Let’s say we want to book tickets on a train. However, if the no. of booked seats is 100, we would like to print The train is full
+
+This is how our if statement looks:
+
+if booked_seats == 100:
+	print('The train is full')
+As you can see, the booked_seats == 100 results in a boolean value that is either true or false.
+
+Depending on this condition, the statement is executed.
+
+Note that, we used an indentation over here: this means that any statement with the same indent is associated with the if statement mentioned above.
+
+For example, let us add one more statement that increases the number of full trains by one, only when the train is full
+
+if booked_seats == 100:
+	print('The train is full')
+	full_trains = full_trains + 1
+If we don’t indent the second statement, only the first statement below the if statement gets affected.
+
+For example, if we write:
+
+if booked_seats == 100:
+	print('The train is full')
+full_trains = full_trains + 1
+The statement full_trains = full_trains + 1 gets executed even if the condition is false!
+
+What is the If-Else statement?
+We use the else statement when we want to execute certain statements only if a condition is false
+
+In our earlier example, let’s say we want to decrement full_trains if the number of booked seats is not 100. Here is how we would use the else statement:
+
+if booked_seats == 100:
+	print('The train is full')
+	full_trains = full_trains + 1
+else:
+	full_trains = full_trains - 1
+The else statement is quite powerful when we use it in an if-elif-else ladder.
+
+This allows us to test multiple conditions. We can understand this naturally using an example:
+
+Let’s say we want to calculate the grade of a student depending on the marks of the student. We have to allot the grade as per this table:
+
+Marks	Grade
+> 90	A
+81 - 90	B
+71 - 80	C
+61 - 70	D
+0 - 60	F
+To translate this into if-elif-else ladder:
+
+if marks > 90:        
+    Grade = "A"
+elif marks >= 81 and marks <= 90:
+    Grade = "B"        
+elif marks >= 71 and marks <= 80:
+    Grade = "C"
+elif marks >= 61 and marks <= 70:
+    Grade = "D"
+else:
+    Grade = "F"
+Try and think of some values and enter them in the conditions - you will be able to understand the flow of the statements.
+
+It is a good programming habit to keep in mind the various cases that can be entered. We know that the marks are never going to exceed 100. However the variable marks can hold values above 100.
+
+What happens if the user enters 105? In our above code, we will still give the Grade variable a value of A. However, this is incorrect. So, let us correct our code:
+
+if marks > 90 and marks <= 100:        
+    Grade = "A"
+elif marks >= 81 and marks <= 90:
+    Grade = "B"        
+elif marks >= 71 and marks <= 80:
+    Grade = "C"
+elif marks >= 61 and marks <= 70:
+    Grade = "D"
+elif marks >= 0 and marks <= 60:
+    Grade = "F"
+else:
+    Grade = "-"
+Here we modified our first and last conditions to ensure that:
+
+Grade has a value between A-F only if the marks variable has a value between 0 and 100
+If the marks variable has a value less than 0 or greater than 100, then our last else statement gives it a value of -
+Example 1
+Write a Program that prints Yes! if the number is a multiple of 3. Otherwise it prints No!
+
+number = 10
+if number%3 == 0:
+	print('Yes!')
+else:
+	print('No')
+The output of the program for different values:
+
+number	output
+9	Yes!
+25	No
+10	No
+Example 2
+Write a Program that prints Yes! if a number is even. It prints Yes please if the number is even and also divisible by 3. Otherwise it prints No.
+
+number = 10
+if number%2 == 0 and number %3 == 0:
+    print("Yes please")
+elif(number%2 == 0):
+    print("Yes!")
+else:
+    print("No!")
+The output of the program for different values:
+
+number	Output
+10	Yes!
+24	Yes please
+7	No!
