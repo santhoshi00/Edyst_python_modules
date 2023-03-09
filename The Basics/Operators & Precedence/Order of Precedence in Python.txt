@@ -1,0 +1,45 @@
+What is Precedence?
+When we use more than one operator in a statement, some operators get evaluated or calculated before others.
+
+For example, if we calculate 12 + 8 * 2. Which operation should get evaluated first? 12 + 8? or 8 * 2. Python has a defined order in which these operators get evaluated.
+
+This order of evaluation is call the Order of Precedence.
+
+The Order of Precedence for Arithmetic Operators is:
+
+Operators	Precedence
+Multiplicative	* / %
+Additive	+ -
+As you can see, the * / % operators have a higher precedence than + -.
+
+Accordingly we see the the results of the following examples:
+
+8 + 9 * 2 gives 26
+36 / 4 - 2 gives 7.0
+However, what happens when operators of equal precedence occur together? In this case, all arithmetic operators, that we have seen, are evaluated from left to right.
+
+For eg,
+
+8 % 9 * 2 gives 16
+9 * 2 % 8 gives 2
+However, the assignment operator, i.e. = , evaluates from right to left.
+
+For eg,
+
+x = y = z = 7 // 3 * 2 The order of operations here is:
+
+7//3 which evaluates to 2
+2 * 2 which evaluates to 4
+z = 4 z becomes 4
+y = z y becomes 4
+x = y y becomes 4
+The arithmetic operators first evaluated from left to right and the assignment operator evaluated from right to left.
+
+Using Parentheses
+We use parentheses when we want to explicitly tell the order of evaluation.
+
+For eg,
+
+8 % 9 * 2 evaluates to 16
+8 % (9*2) evaluates to 8 because now, 9*2 is evaluated first
+It is a good programming habit to use parentheses or brackets for every expression we write. It helps others read & understand our code better.
